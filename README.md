@@ -2,7 +2,7 @@
 
 This is a solution to the [BMI Calculator](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9) challenge.
 
-![Design preview for the BMI Calculator coding challenge](./design/desktop-preview.jpg)
+![Design preview for the BMI Calculator coding challenge](./design/preview.jpg)
 
 ## Links
 
