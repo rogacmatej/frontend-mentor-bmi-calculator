@@ -1,0 +1,82 @@
+@use '../abstracts' as *;
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: url(/fonts/static/Inter-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  src: url(/fonts/static/Inter-SemiBold.ttf) format('truetype');
+  font-display: swap;
+}
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 400 900;
+    font-stretch: 75 100;
+    src: url(/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+    font-display: swap;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  :root {
+    --fs-heading1: 4.8rem;
+    --lh-heading1: 110%;
+    --ls-heading1: -0.24rem;
+
+    --fs-heading2: 3.2rem;
+    --lh-heading2: 110%;
+    --ls-heading2: -0.16rem;
+  }
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body);
+  color: hsl(var(--clr-dark-electric-blue));
+}
+
+p + p {
+  margin-bottom: 1.5rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.heading-quaternary {
+  color: hsl(var(--clr-gunmetal));
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-semi-bold);
+}
+
+.heading-primary {
+  font-size: var(--fs-heading1);
+  line-height: var(--lh-heading1);
+  letter-spacing: var(--ls-heading1);
+}
+
+.heading-secondary {
+  font-size: var(--fs-heading2);
+  line-height: var(--lh-heading2);
+  letter-spacing: var(--ls-heading2);
+}
+
+.heading-tertiary {
+  font-size: var(--fs-heading3);
+  line-height: var(--ls-heading3);
+  letter-spacing: var(--ls-heading3);
+}
+
+.heading-quaternary {
+  font-size: var(--fs-heading4);
+  line-height: var(--ls-heading4);
+  letter-spacing: var(--ls-heading4);
+}

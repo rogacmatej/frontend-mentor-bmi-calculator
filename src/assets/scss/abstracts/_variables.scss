@@ -1,0 +1,47 @@
+$grid-breakpoints: (
+  xs: 23.4375em,
+  sm: 36em,
+  md: 48em,
+  lg: 62em,
+  xl: 75em,
+  xxl: 87.5em
+);
+
+:root {
+  --clr-blue: 227, 92%, 58%;
+  --clr-gunmetal: 215, 31%, 21%;
+  --clr-dark-electric-blue: 215, 17%, 45%;
+  --clr-borders: 228, 38%, 23%;
+
+  --clr-neutral-100: 0, 100%, 100%;
+  --clr-neutral-900: 0, 0%, 0%;
+
+  --ff-body: 'Inter', system-ui, sans-serif;
+  --ff-heading: 'Inter', system-ui, sans-serif;
+
+  --fw-light: 400;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 600;
+  --fw-extra-bold: 600;
+
+  --fs-heading1: 6.4rem;
+  --lh-heading1: 110%;
+  --ls-heading1: -0.32rem;
+
+  --fs-heading2: 4.8rem;
+  --lh-heading2: 110%;
+  --ls-heading2: -0.24rem;
+
+  --fs-heading3: 2.4rem;
+  --lh-heading3: normal;
+  --ls-heading3: -0.12rem;
+
+  --fs-heading4: 2rem;
+  --lh-heading4: normal;
+  --ls-heading4: -0.1rem;
+
+  --fs-body: 1.6rem;
+  --lh-body: 150%;
+  --ls-body: normal;
+}
