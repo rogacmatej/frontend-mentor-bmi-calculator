@@ -52,7 +52,7 @@ const advices: Advice[] = [
   max-width: 140rem;
   padding-block: 5.6rem;
   border-radius: 3.5rem;
-  background: linear-gradient(290.1deg, rgba(214, 230, 254, 0.25) 0%, rgba(214, 252, 254, 0) 100%);
+  background: linear-gradient(290deg, rgba(214, 230, 254, 0.25) 0%, rgba(214, 252, 254, 0) 100%);
 }
 
 .advices {

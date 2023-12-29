@@ -29,6 +29,12 @@ import logo from '@/assets/images/logo.svg'
 </template>
 <style scoped lang="scss">
 .hero-section {
+  @include pseudo() {
+    inset: 0;
+    height: 64rem;
+    background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 0 0 50px 50px;
+  }
   .hero-container {
     position: relative;
   }
@@ -40,11 +46,8 @@ import logo from '@/assets/images/logo.svg'
   .hero {
     position: relative;
     padding-top: 3.2rem;
-    width: calc(100% + var(--horizontal-spacing));
-    height: 64rem;
-    border-radius: 0 0 50px 50px;
-    background: linear-gradient(to left, hsl(216, 95%, 92%), hsla(184, 95%, 92%, 0));
     text-align: center;
+    height: 64rem;
 
     &__logo {
       width: 4rem;
@@ -72,6 +75,14 @@ import logo from '@/assets/images/logo.svg'
 
 @include media-breakpoint-up(lg) {
   .hero-section {
+    max-width: 140rem;
+    height: 73.7rem;
+    margin-inline: auto;
+
+    @include pseudo() {
+      width: 97.8rem;
+      height: 100%;
+    }
     .bmi-calculator-container {
       max-width: 56.4rem;
       position: absolute;
@@ -82,14 +93,18 @@ import logo from '@/assets/images/logo.svg'
     }
 
     .hero {
-      width: 97.8rem;
-      height: 73.7rem;
+      &__logo {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin-bottom: 12.7rem;
+      }
 
       &__content {
         max-width: 56.4rem;
         align-items: start;
         text-align: left;
         margin-right: unset;
+        gap: 3.5rem;
       }
     }
   }
